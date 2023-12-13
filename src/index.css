@@ -1,26 +1,38 @@
 *,::before,::backdrop{
   box-sizing: border-box;
 }
-html{
-  height: 100%;
-}
+
 body {
-  margin: 0;
+  margin: 0 auto;
   color: #fff;
   display: flex;
  justify-content: center;
  align-items: center;
- height: 100%;
+ min-height: 100vh;
 }
 .user-details-section{
   display: flex;
   gap: 12px;
   align-items: center;
 }
+nav{
+  text-align: center;
+font-family: Futura Md BT;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 83.333% */
+letter-spacing: 0.48px;
+  background: var(--button-grid, conic-gradient(from 199deg at 46.09% 53.52%, #842ED8 111.46745681762695deg, #DB28A9 212.01815128326416deg, #9D1DCA 360deg));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 .shared-layout{
   max-width: 360px;
   background-color: #1C1B1B;
-  height: 800px;
+  min-height: 800px;
+  padding: 20px;
 }
 .avatar{
   flex: 1;
@@ -35,4 +47,120 @@ body {
 .notifications{
   flex:1;
 }
+.card{
+width: 130px;
+height: 160px;
+flex-shrink: 0;
+border-radius: 16px;
+background: #fff;
+}
+/* @media screen and(max-width:480px) {
+  body{
+    display: ;
+  }
+} */
+/* CustomCarousel.css */
+/* .custom-carousel-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
 
+.custom-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-carousel-card {
+  width: 100%;
+  display: flex;
+  gap:16px;
+}
+
+.custom-carousel-card div {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.custom-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.custom-carousel-btn:first-child {
+  left: 10px;
+}
+
+.custom-carousel-btn:last-child {
+  right: 10px;
+} */
+/* Carousel.css */
+.carousel-container {
+  width: 100%;
+ 
+}
+
+.carousel-card {
+ display: flex;
+ gap: 16px;
+
+  width: 140px;
+  height: 160px;
+  border-radius: 16px ;
+  text-align: center;
+  background: url('./assets/carousel.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.popular-artist{
+ 
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+ 
+  text-align: center;
+ 
+}
+.artistA{
+  background: url('./assets/artistA.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+.artistB{
+  background: url('./assets/artistB.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+.artistC{
+  background: url('./assets/artistC.png');
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+.suggested-songs-card{
+
+  width: 140px;
+  height: 160px;
+  border-radius: 16px ;
+  text-align: center;
+  background: url('./assets/carousel.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
